@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_page_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guidline"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guidline"
+        app:layout_constraintEnd_toEndOf="parent">
+
+      <TextView
+          android:id="@+id/uz_pos_text"
+          android:textColor="#28B473"
+          android:fontFamily="@font/Roboto_Medium"
+          android:text="@string/uz_pos"
+          android:letterSpacing="-0.03"
+          android:textSize="@dimen/uz_pos"
+          android:layout_marginTop="@dimen/margin_80"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/uz_pos_buttom_text"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textColor="#576271"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:text="@string/uz_pos_buttom"
+            app:layout_constraintLeft_toLeftOf="@+id/uz_pos_text"
+            app:layout_constraintRight_toRightOf="@+id/uz_pos_text"
+            app:layout_constraintTop_toBottomOf="@+id/uz_pos_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+
+           android:id="@+id/login"
+           android:layout_marginTop="@dimen/margin_80"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/uz_pos_buttom_text"
+           android:layout_width="@dimen/login_edit_weight"
+           android:layout_height="@dimen/login_edit_heigt">
+
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/input_login"
+               android:textColorHint="#576271"
+               android:hint="@string/login_hint"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </com.google.android.material.textfield.TextInputEditText>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_marginTop="@dimen/margin_16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            android:layout_width="@dimen/login_edit_weight"
+            app:passwordToggleEnabled="true"
+            android:layout_height="@dimen/login_edit_heigt">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_password"
+                android:textColorHint="#576271"
+                android:hint="@string/password_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_8"
+            android:id="@+id/forget_password"
+            android:textSize="@dimen/uz_pos_buttom"
+            android:textColor="#27B272"
+            app:layout_constraintLeft_toLeftOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            android:text="@string/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <Button
+            android:id="@+id/login_button"
+            android:textSize="@dimen/uz_pos_buttom"
+            android:textColor="#ffffff"
+            android:text="@string/login"
+            android:layout_marginTop="@dimen/margin_90"
+            android:background="@drawable/login_button"
+            app:layout_constraintTop_toBottomOf="@+id/forget_password"
+            app:layout_constraintLeft_toLeftOf="@+id/password"
+            app:layout_constraintRight_toRightOf="@+id/password"
+            android:layout_width="@dimen/login_edit_weight"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+<LinearLayout
+    android:layout_marginLeft="@dimen/margin_16"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guidline"
+    android:layout_width="168dp"
+    android:layout_height="100dp">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <ImageView
+           android:src="@drawable/nav_icon_headset_mic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+       <TextView
+           android:layout_marginLeft="@dimen/margin_8"
+           android:fontFamily="@font/Roboto_Medium"
+           android:textColor="#27B272"
+           android:text="@string/nav_support"
+           android:textSize="@dimen/text_20"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_8"
+        android:id="@+id/login_email"
+        android:textColor="#757575"
+        android:textSize="@dimen/text_14"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/uz_pos_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_4"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/text_14"
+        android:id="@+id/login_phone"
+        android:text="@string/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="@dimen/text_14"
+        android:layout_marginTop="@dimen/margin_4"
+        android:textColor="#27B272"
+        android:text="@string/login_sayt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidline"
+        app:layout_constraintGuide_percent="0.6"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
