@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/margin_8"
+    android:layout_width="640dp"
+    android:layout_marginEnd="@dimen/margin_8"
+    android:layout_marginStart="@dimen/margin_4"
+    android:layout_marginTop="@dimen/margin_8"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".users.fragments.MainPageFragment"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/product_number_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="@dimen/text_20" />
+
+        <LinearLayout
+            android:layout_weight="30"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:text="Coca - cola 1,5L"
+                android:textColor="#000000"
+                android:textSize="@dimen/text_20" />
+
+            <TextView
+                android:id="@+id/product_code_id"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="19dp"
+                android:text="4703265110064"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_weight="18"
+            android:id="@+id/product_price_id"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="6,990 sum"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_weight="6"
+            android:id="@+id/product_amount_minus_id"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/icon_remove"
+            android:background="@drawable/bg_decrease_button"
+            android:layout_gravity="center" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:text="5"
+            android:layout_weight="6"
+            android:id="@+id/product_amount_text"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="#2A000000"
+            android:gravity="center"
+            android:textColor="#000000">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <ImageButton
+            android:layout_weight="6"
+            android:id="@+id/product_amount_plus_id"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icon_add"
+            android:background="@drawable/bg_increase_button"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:id="@+id/product_sum_id"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="27,960"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:id="@+id/product_clearBtn_id"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/icon_cancel"
+            android:background="?android:selectableItemBackground"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

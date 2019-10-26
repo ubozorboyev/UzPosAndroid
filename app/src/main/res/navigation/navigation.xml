@@ -3,7 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    tools:ignore="UnusedNavigation">
+    app:startDestination="@id/mainPageFragment">
+
+
+    <fragment
+        android:id="@+id/mainPageFragment"
+        tools:layout="@layout/fragment_main_page"
+        android:name="com.example.uzposandroid.users.fragments.MainPageFragment"
+        android:label="MainPageFragment" />
 
 
 </navigation>

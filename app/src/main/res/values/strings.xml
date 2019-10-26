@@ -22,4 +22,21 @@
     <string name="phone_number">+9901829193637 </string>
     <string name="login_sayt">www.aliensoft.uz </string>
 
+       <!--fragment main page -->
+
+    <string name="Number">№</string>
+    <string name="Name_text">Name</string>
+    <string name="Price_text">Price</string>
+    <string name="search">Search</string>
+    <string name="delete_all">Удалить все</string>
+    <string name="pay">PAY</string>
+    <string name="Amount_text">Amount</string>
+    <string name="Sum_text">Sum</string>
+
+    <string name="path">Все категории\t/ Овощи и фрукты /\tФрукты / Персик инжир, вес</string>
+    <string name="assorti_iz_suxoproduktov_lazzat">Ассорти из сухофруктов Лаззат</string>
+    <string name="todo">TODO</string>
+
+
+
 </resources>

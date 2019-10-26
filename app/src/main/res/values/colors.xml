@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="gray_light">#E9ECEF</color>
+    <color name="gray_line">#E0E0E0</color>
+    <color name="white">#ffffff</color>
+    <color name="standard_text_color">#000000</color>
+    <color name="chut_chut_gray_white">#FCFCFC</color>
+    <color name="green_anywhere">#28B473</color>
+    <color name="blue">#0088CC</color>
+    <color name="primaryTextColor">#2F2F2F</color>
+
 </resources>
